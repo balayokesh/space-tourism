@@ -1,4 +1,4 @@
-# SpaceTourism
+# SpaceTourism [![Netlify Status](https://api.netlify.com/api/v1/badges/36051186-9b5b-4f65-adc5-5bca1a4ee44a/deploy-status)](https://app.netlify.com/sites/euphonious-bienenstitch-51d23f/deploys)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
