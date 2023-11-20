@@ -78,8 +78,15 @@ button {
     height: 274px;
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
-    border: none;
     letter-spacing: 2px;
     font-size: 32px;
     margin-bottom: 50px;
+    border: none;
+    outline: 1px solid transparent;
+    transition: outline .6s ease-in-out;
+}
+
+button:hover {
+    outline: 50px solid rgb(151, 151, 151, .5);
+    transition: outline 1.5s ease-out;
 }
