@@ -94,8 +94,8 @@ button:hover {
     transition: outline 1.5s ease-out;
 }
 
-/* Tablet screen size */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+/* Tablet and mobile screen size */
+@media only screen and (max-width: 768px) {
     #home-container {
         background: url('../../assets/home/background-home-tablet.jpg');
         height: 100%;
@@ -132,5 +132,36 @@ button:hover {
     }
     aside {
         width: 100%;
+    }
+}
+
+/* Mobile screen only */
+@media only screen and (max-device-width: 480px){
+    #home-container {
+        background: url('../../assets/home/background-home-mobile.jpg');
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    p {
+        font-size: 15.5px;
+    }
+    nav {
+        margin-bottom: 30px;
+    }
+    section {
+        margin-bottom: 25px;
+    }
+    button {
+        width: 200px;
+        height: 200px;
+        font-size: 25px;
     }
 }
