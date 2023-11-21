@@ -63,6 +63,9 @@ nav ul li a {
 nav ul li:last-child {
     margin-right: 20%;
 }
+section {
+    width: 50%;
+}
 p {
     font-family: 'Barlow', sans-serif;
     font-size: 1.1rem;
@@ -95,13 +98,39 @@ button:hover {
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     #home-container {
         background: url('../../assets/home/background-home-tablet.jpg');
-        background-position: center;
         height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
     }    
     hr {
         display: none;
     }
     main {
         flex-direction: column;
+        padding: 0
+    }
+    nav {
+        padding: 4%;
+        margin-bottom: 95px;
+    }
+    nav ul {
+        background: rgb(170, 170, 211, .1);
+        top: 0
+    }
+    .nav-ul-number {
+        display: none;
+    }
+    p {
+        width: 100%;
+    }
+    section {
+        width: 80%;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 95px;
+    }
+    aside {
+        width: 100%;
     }
 }
