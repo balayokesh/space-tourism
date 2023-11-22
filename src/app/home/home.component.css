@@ -9,7 +9,6 @@
 }
 
 h5 {  
-    /* Heading 5 */
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 28px;
     text-transform: uppercase;
@@ -38,7 +37,7 @@ hr {
     margin-left: 5%;
     z-index: 3;
 }
-nav ul {
+nav div ul {
     list-style-type: none;
     display: flex;
     position: absolute;
@@ -52,15 +51,15 @@ nav ul {
     -webkit-backdrop-filter: blur(215px);
     backdrop-filter: blur(215px);
 }
-nav ul li {
+nav div ul li {
     text-transform: uppercase;
     word-spacing: 11px;
 }
-nav ul li a {
+nav div ul li a {
     text-decoration: none;
     color: var(--white);
 }
-nav ul li:last-child {
+nav div ul li:last-child {
     margin-right: 20%;
 }
 section {
@@ -73,7 +72,7 @@ p {
     width: 85%;
 }
 
-button {
+button#explore {
     border-radius: 50%;
     background: var(--white);
     color: var(--dark);
@@ -89,7 +88,7 @@ button {
     transition: outline .6s ease-in-out;
 }
 
-button:hover {
+button#explore:hover {
     outline: 50px solid rgb(151, 151, 151, .5);
     transition: outline 1.5s ease-out;
 }
@@ -113,8 +112,9 @@ button:hover {
     nav {
         padding: 4%;
         margin-bottom: 95px;
+        justify-content: space-between;
     }
-    nav ul {
+    nav div ul {
         background: rgb(170, 170, 211, .1);
         top: 0
     }
@@ -159,9 +159,25 @@ button:hover {
     section {
         margin-bottom: 25px;
     }
-    button {
+    button#explore {
         width: 200px;
         height: 200px;
         font-size: 25px;
+    }
+    header {
+        position: relative;
+    }
+    div#navbarNav {
+        height: 100vh;
+        position: absolute;
+        top: 50px;
+        right: 50%;
+    }
+    div#navbarNav ul {
+        margin: 5%;
+        padding: 5%;
+    }
+    button.navbar-toggler {
+        
     }
 }
