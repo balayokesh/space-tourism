@@ -8,6 +8,10 @@
     color: var(--light);
 }
 
+#nav-close-btn {
+    display: none;
+}
+
 h5 {  
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 28px;
@@ -33,7 +37,7 @@ nav {
 }
 hr {
     color: var(--white);
-    width: 33%;
+    width: 31%;
     margin-left: 5%;
     z-index: 3;
 }
@@ -94,7 +98,7 @@ button#explore:hover {
 }
 
 /* Tablet and mobile screen size */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991.98px) {
     #home-container {
         background: url('../../assets/home/background-home-tablet.jpg');
         height: 100%;
@@ -136,7 +140,7 @@ button#explore:hover {
 }
 
 /* Mobile screen only */
-@media only screen and (max-device-width: 480px){
+@media only screen and (max-width: 575.98px){
     #home-container {
         background: url('../../assets/home/background-home-mobile.jpg');
         height: 100%;
@@ -146,6 +150,10 @@ button#explore:hover {
     }
     h5 {
         font-size: 1rem;
+    }
+    .nav-ul-number {
+        display: inline;
+        font-weight: 600;
     }
     h1 {
         font-size: 5rem;
@@ -164,20 +172,35 @@ button#explore:hover {
         height: 200px;
         font-size: 25px;
     }
-    header {
-        position: relative;
-    }
     div#navbarNav {
         height: 100vh;
         position: absolute;
-        top: 50px;
-        right: 50%;
+        top: 0;
+        right: 0;
+        width: 70%;
     }
     div#navbarNav ul {
-        margin: 5%;
-        padding: 5%;
+        backdrop-filter: blur(30px);
+        height: 100%;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 30px;
+        position: relative;
     }
-    button.navbar-toggler {
-        
+    div#navbarNav ul li {
+        margin: 5px 0;
+        letter-spacing: 2px;
+        font-weight: lighter;
+    }
+    #nav-close-btn {
+        display: inline-block;
+        margin: 10px 35px 50px 0;
+        border: none;
+        background: transparent;
+        color: var(--light);
+        font-size: 2.5em;
+        padding: 0 5px;
+        align-self: flex-end;
     }
 }
