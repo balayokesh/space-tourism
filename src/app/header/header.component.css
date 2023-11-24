@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+#nav-close-btn {
+    display: none;
+}
+
+nav {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    padding: 55px 50px;
+    justify-content: left;
+    align-items: center;
+}
+hr {
+    color: var(--white);
+    width: 31%;
+    margin-left: 5%;
+    z-index: 3;
+}
+nav div ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    width: 60%;
+    height: 96px;
+    right: 0;
+    top: 30px;
+    -webkit-backdrop-filter: blur(215px);
+    backdrop-filter: blur(215px);
+}
+nav div ul li {
+    text-transform: uppercase;
+    word-spacing: 11px;
+}
+nav div ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+nav div ul li:last-child {
+    margin-right: 20%;
+}
+section {
+    width: 50%;
+}
+
+/* Tablet and mobile screen size */
+@media only screen and (max-width: 991.98px) {  
+    hr {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+        padding: 0
+    }
+    nav {
+        padding: 4%;
+        margin-bottom: 95px;
+        justify-content: space-between;
+    }
+    nav div ul {
+        background: rgb(170, 170, 211, .1);
+        top: 0
+    }
+    .nav-ul-number {
+        display: none;
+    }
+    section {
+        width: 80%;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 95px;
+    }
+}
+
+/* Mobile screen only */
+@media only screen and (max-width: 575.98px){
+    .nav-ul-number {
+        display: inline;
+        font-weight: 600;
+    }
+    nav {
+        margin-bottom: 30px;
+    }
+    section {
+        margin-bottom: 25px;
+    }
+    div#navbarNav {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+    }
+    div#navbarNav ul {
+        backdrop-filter: blur(30px);
+        height: 100%;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 30px;
+        position: relative;
+    }
+    div#navbarNav ul li {
+        margin: 5px 0;
+        letter-spacing: 2px;
+        font-weight: lighter;
+    }
+    #nav-close-btn {
+        display: inline-block;
+        margin: 10px 35px 50px 0;
+        border: none;
+        background: transparent;
+        color: var(--light);
+        font-size: 2.5em;
+        padding: 0 5px;
+        align-self: flex-end;
+    }
+}
