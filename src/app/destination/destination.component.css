@@ -1,4 +1,6 @@
-div {
+div#container {
     background: url('../../assets/destination/background-destination-mobile.jpg');
-    background-position: center;
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
