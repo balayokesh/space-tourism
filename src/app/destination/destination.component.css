@@ -2,5 +2,59 @@ div#container {
     background: url('../../assets/destination/background-destination-mobile.jpg');
     background-position: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
+    color: var(--white);
+    text-align: center;
+}
+
+aside {
+    padding: 25px;
+    text-transform: uppercase;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+h5 span {
+    color: grey;
+}
+
+nav {
+    margin: 0px 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0
+}
+
+nav ul li {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.36px;
+}
+
+h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 3.75em;
+    margin: 1px 0;
+}
+
+p.description {
+    text-transform: none;
+}
+
+hr {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+img {
+    width: 170px;
 }

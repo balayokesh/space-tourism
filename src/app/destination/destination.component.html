@@ -2,23 +2,29 @@
     <app-header />
     <div>
         <section>
-            <h5>01 Pick your destination</h5>
-            <img src="" alt=""> 
+            <h5><span class="fw-bold">01</span> &nbsp;Pick your destination</h5>
+            <img [src]="'../' + currentDestination.images.png" [alt]="currentDestination.name" />
         </section>
         <aside>
-            <nav></nav>
-            <h1></h1>
-            <p></p>
-            <hr>
+            <nav>
+                <ul>
+                    <li *ngFor="let destination of data.destinations">
+                        <a (click)="this.currentDestination = destination">{{destination.name}}</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>{{ currentDestination.name }}</h1>
+            <p class="description">{{ currentDestination.description }}</p>
             <hr />
             <div>
                 <div>
-                    <p></p>
-                    <p></p>
+                    <p>AVG. DISTANCE</p>
+                    <p>{{ currentDestination.distance }}</p>
                 </div>
                 <div>
-                    <p></p>
-                    <p></p>
+                    <p>EST. TRAVEL TIME</p>
+                    <p>{{ currentDestination.travel }}</p>
                 </div>
             </div>
         </aside>
