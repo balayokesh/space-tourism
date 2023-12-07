@@ -6,7 +6,7 @@
             <img [src]="'../' + currentDestination.images.png" [alt]="currentDestination.name" />
         </section>
         <aside>
-            <nav>
+            <nav class="justify-content-center d-sm-flex">
                 <ul>
                     <li *ngFor="let destination of data.destinations">
                         <a (click)="this.currentDestination = destination">
@@ -22,9 +22,9 @@
             </nav>
 
             <h1>{{ currentDestination.name }}</h1>
-            <p class="description">{{ currentDestination.description }}</p>
+            <p class="description p-sm-5">{{ currentDestination.description }}</p>
             <hr />
-            <div class="destination-info">
+            <div class="destination-info d-sm-flex justify-content-around">
                 <div>
                     <p>AVG. DISTANCE</p>
                     <p>{{ currentDestination.distance }}</p>

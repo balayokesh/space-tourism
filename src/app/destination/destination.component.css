@@ -28,6 +28,7 @@ nav {
 
 nav ul {
     list-style-type: none;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +38,10 @@ nav ul {
 nav ul li {
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 2.36px;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
 }
 
 h1 {
@@ -68,9 +73,6 @@ img {
     padding-bottom: 8px;
 }
 
-.destination-info {
-}
-
 .destination-info div {
     margin-bottom: 35px;
 }
@@ -86,3 +88,13 @@ img {
     font-family: 'Bellefair', serif;
 }
 
+@media (min-width:641px) {
+    h5 {
+        text-align: left;
+        margin-left: 32px;
+    }
+
+    nav ul {
+        width: 50%;
+    }
+}
