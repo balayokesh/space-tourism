@@ -9,7 +9,14 @@
             <nav>
                 <ul>
                     <li *ngFor="let destination of data.destinations">
-                        <a (click)="this.currentDestination = destination">{{destination.name}}</a>
+                        <a (click)="this.currentDestination = destination">
+                            <span id="current-destination" *ngIf="destination === currentDestination">
+                                {{destination.name}}
+                            </span>
+                            <span *ngIf="destination !== currentDestination">
+                                {{destination.name}}
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -17,7 +24,7 @@
             <h1>{{ currentDestination.name }}</h1>
             <p class="description">{{ currentDestination.description }}</p>
             <hr />
-            <div>
+            <div class="destination-info">
                 <div>
                     <p>AVG. DISTANCE</p>
                     <p>{{ currentDestination.distance }}</p>

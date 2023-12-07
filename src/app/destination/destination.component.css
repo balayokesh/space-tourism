@@ -1,7 +1,7 @@
 div#container {
     background: url('../../assets/destination/background-destination-mobile.jpg');
-    background-position: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     color: var(--white);
     text-align: center;
@@ -42,19 +42,47 @@ nav ul li {
 h1 {
     font-family: 'Bellefair', serif;
     font-size: 3.75em;
-    margin: 1px 0;
+    padding: 3px 0;
+    margin-top: 25px;
 }
 
 p.description {
     text-transform: none;
+    font-family: 'Barlow', sans-serif;
+    line-height: 25px;
+    color: #D0D6F9;
 }
 
 hr {
     margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 32px 0;
 }
 
 img {
     width: 170px;
+    margin-top: 25px;
 }
+
+#current-destination {
+    border-bottom: 3px solid white;
+    padding-bottom: 8px;
+}
+
+.destination-info {
+}
+
+.destination-info div {
+    margin-bottom: 35px;
+}
+
+.destination-info div p:first-child {
+    letter-spacing: 2.36px;
+    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.destination-info div p:nth-child(2) {
+    font-size: 28px;
+    font-family: 'Bellefair', serif;
+}
+
