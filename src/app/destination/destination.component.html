@@ -1,12 +1,12 @@
 <div id="container">
     <app-header />
-    <div>
+    <div id="outer-div">
         <section>
             <h5><span class="fw-bold">01</span> &nbsp;Pick your destination</h5>
             <img [src]="'../' + currentDestination.images.png" [alt]="currentDestination.name" />
         </section>
         <aside>
-            <nav class="justify-content-center d-sm-flex">
+            <nav class="d-sm-flex">
                 <ul>
                     <li *ngFor="let destination of data.destinations">
                         <a (click)="this.currentDestination = destination">
@@ -22,9 +22,9 @@
             </nav>
 
             <h1>{{ currentDestination.name }}</h1>
-            <p class="description p-sm-5">{{ currentDestination.description }}</p>
+            <p class="description p-sm-5 p-md-0">{{ currentDestination.description }}</p>
             <hr />
-            <div class="destination-info d-sm-flex justify-content-around">
+            <div class="destination-info d-sm-flex">
                 <div>
                     <p>AVG. DISTANCE</p>
                     <p>{{ currentDestination.distance }}</p>

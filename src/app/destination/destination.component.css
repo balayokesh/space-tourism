@@ -24,6 +24,7 @@ h5 span {
 
 nav {
     margin: 0px 25px;
+    justify-content: center;
 }
 
 nav ul {
@@ -73,6 +74,10 @@ img {
     padding-bottom: 8px;
 }
 
+.destination-info {
+    justify-content: space-around;
+}
+
 .destination-info div {
     margin-bottom: 35px;
 }
@@ -89,6 +94,12 @@ img {
 }
 
 @media (min-width:641px) {
+    div#container {
+        background: url('../../assets/destination/background-destination-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     h5 {
         text-align: left;
         margin-left: 32px;
@@ -96,5 +107,63 @@ img {
 
     nav ul {
         width: 50%;
+    }
+}
+
+@media (min-width:769px) {
+    div#container {
+        background: url('../../assets/destination/background-destination-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h5 {
+        text-align: left;
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        position: absolute;
+        top: 10px
+    }
+
+    #outer-div {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 163px;
+        padding-right: 163px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative
+    }
+
+    img {
+        height: 445px;
+        width: 445px;
+    }
+
+    aside {
+        margin-top: 70px;
+        text-align: left;
+        width: 450px;
+    }
+
+    aside nav {
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    aside nav ul li {
+        margin-right: 35px;
+    }
+
+    aside div {
+        justify-content: flex-start;
+    }
+
+    aside div div:first-child {
+        margin-right: 79px;
     }
 }
