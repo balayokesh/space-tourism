@@ -1,0 +1,169 @@
+div#container {
+    background: url('../../assets/crew/background-crew-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: var(--white);
+    text-align: center;
+}
+
+aside {
+    padding: 25px;
+    text-transform: uppercase;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.5px;
+    margin-bottom: 32px;        
+}
+
+h5 span {
+    color: grey;
+}
+
+nav {
+    margin: 32px auto;
+    margin-bottom: 0;
+    width: 88px;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0
+}
+
+nav ul li {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.36px;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+p.role {
+    text-transform: none;
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: auto;
+    margin: 0 24px;
+}
+
+img {
+    /* width: 226.15px; */
+    height: 223px;
+}
+
+.destination-info {
+    justify-content: space-around;
+}
+
+.destination-info div {
+    margin-bottom: 35px;
+}
+
+i {
+    font-size: x-small;
+}
+
+.bio {
+    font-size: 15px;
+    text-transform: none;
+    margin: 16px 24px;
+    /* padding-bottom: 15px; */
+}
+.destination-info div p:first-child {
+    letter-spacing: 2.36px;
+    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.destination-info div p:nth-child(2) {
+    font-size: px;
+    font-family: 'Bellefair', serif;
+}
+
+@media (min-width:641px) {
+    div#container {
+        background: url('../../assets/destination/background-destination-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h5 {
+        text-align: left;
+        margin-left: 32px;
+    }
+
+    nav ul {
+        width: 50%;
+    }
+}
+
+@media (min-width:769px) {
+    div#container {
+        background: url('../../assets/destination/background-destination-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #outer-div {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 163px;
+        padding-right: 163px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative
+    }
+
+    img {
+        height: 445px;
+        width: 445px;
+    }
+
+    aside {
+        margin-top: 70px;
+        text-align: left;
+        width: 450px;
+    }
+
+    aside nav {
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    aside nav ul li {
+        margin-right: 35px;
+    }
+
+    aside div {
+        justify-content: flex-start;
+    }
+
+    aside div div:first-child {
+        margin-right: 79px;
+    }
+}

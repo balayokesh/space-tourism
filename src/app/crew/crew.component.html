@@ -1,1 +1,33 @@
-<p>crew works!</p>
+<div id="container">
+    <app-header />
+    <div id="outer-div">
+        <h5><span class="fw-bold">02</span> &nbsp;Meet your crew</h5>
+        <div>
+            <section>
+                <img [src]="'../' + currentCrewMember.images.png" [alt]="currentCrewMember.name" />
+                <hr />
+            </section>
+
+            <nav class="d-sm-flex">
+                <ul>
+                    <li *ngFor="let destination of data.crew">
+                        <a (click)="this.currentCrewMember = destination">
+                            <span id="current-destination" *ngIf="destination === currentCrewMember">
+                                <i class="bi bi-circle-fill"></i>
+                            </span>
+                            <span *ngIf="destination !== currentCrewMember">
+                                <i class="bi bi-circle"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <aside>
+                <p class="role">{{ currentCrewMember.role }}</p>
+                <h1>{{ currentCrewMember.name }}</h1>
+                <p class="bio">{{ currentCrewMember.bio }}</p>
+            </aside>
+        </div>
+    </div>
+</div>
