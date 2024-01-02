@@ -2,7 +2,7 @@
     <app-header />
     <div id="outer-div">
         <h5><span class="fw-bold">02</span> &nbsp;Meet your crew</h5>
-        <div>
+        <div class="inner-div">
             <section>
                 <img [src]="'../' + currentCrewMember.images.png" [alt]="currentCrewMember.name" />
                 <hr />
@@ -16,7 +16,7 @@
                                 <i class="bi bi-circle-fill"></i>
                             </span>
                             <span *ngIf="destination !== currentCrewMember">
-                                <i class="bi bi-circle"></i>
+                                <i class="bi bi-circle-fill text-secondary"></i>
                             </span>
                         </a>
                     </li>

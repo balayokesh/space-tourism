@@ -108,6 +108,10 @@ img {
     nav ul {
         width: 50%;
     }
+
+    #outer-div {
+        margin-top: 40px;
+    }
 }
 
 @media (min-width:769px) {

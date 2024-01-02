@@ -88,7 +88,6 @@ i {
     font-size: 15px;
     text-transform: none;
     margin: 16px 24px;
-    /* padding-bottom: 15px; */
 }
 .destination-info div p:first-child {
     letter-spacing: 2.36px;
@@ -103,7 +102,7 @@ i {
 
 @media (min-width:641px) {
     div#container {
-        background: url('../../assets/destination/background-destination-tablet.jpg');
+        background: url('../../assets/crew/background-crew-tablet.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -111,10 +110,44 @@ i {
     h5 {
         text-align: left;
         margin-left: 32px;
+        margin-top: 40px;
     }
 
-    nav ul {
-        width: 50%;
+    h1 {
+        margin: 16px;
+    }
+
+    hr {
+        display: none   
+    }
+
+    .inner-div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    img {
+        height: 532px;
+    }
+
+    .bio {
+        width: 70%;
+        margin: 16px auto;
+        margin-bottom: 0;
+    }
+
+    .role {
+        font-size: 24px;
+        font-family: 'Bellefair', serif;
+        color: #fff;
+    }
+
+    nav {
+        margin: 0 auto
+    }
+
+    aside {
+        margin-bottom: 0
     }
 }
 
